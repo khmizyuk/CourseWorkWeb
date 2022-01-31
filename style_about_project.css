@@ -1,0 +1,196 @@
+.about_project__main_page {
+    min-height: 100vh;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-family: "Montserrat Light";
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background-image: url("./sourse/clacter_blue.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_page > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about_project__description_page {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    row-gap: 50px;
+    margin: 50px;
+}
+
+.about_project__description_page__card {
+    min-width: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #05434E;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    transition: 500ms;
+    background-color: #FAFAFA;
+}
+
+.about_project__description_page__card__image {
+    height: 150px;
+    width: 150px;
+}
+
+.about_project__description_page__card__title {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.about_project__relevance {
+    padding: 50px;
+    color: #05434E;
+}
+
+.about_project__relevance__title , .about_project__goal__title {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.about_project__goal {
+    padding: 50px;
+    background-color: #05434E;
+    color: #FAFAFA;
+}
+
+.about_project__slogan_1 {
+    background-color: #2F302B;
+    color: #FAFAFA;
+}
+
+.about_project__slogan_1__content {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.about_project__about_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("./sourse/polygon_background_line.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.about_project__about_project__block_1 , .about_project__about_project__block_2__1 {
+    text-align: center;
+    max-width: 400px;
+    width: 70%;
+    height: max-content;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #FAFAFA;
+    background-color: #05434E;
+    color: #FAFAFA;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.about_project__about_project__block_2 {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about_project__about_project__block_2__1 {
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.about_project__about_project__block_2 > img {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.about_project__about_project__block_2__1 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_project__about_project__block_1__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: #2F302B;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (min-width: 900px) {
+    .about_project__description_page {
+        flex-direction: row;
+        column-gap: 50px;
+    }
+
+    .about_project__about_project__block_2 {
+        flex-direction: row;
+    }
+
+    .about_project__about_project__block_2 > img {
+        margin-top: 150px;
+    }
+
+    .about_project__about_project__block_2__1 {
+        margin-bottom: 300px;
+    }
+
+    .about_project__about_project__block_1 , .about_project__about_project__block_2__1 {
+        width: 50%;
+        max-width: 800px;
+    }
+
+    .about_project__description_page__card {
+        max-width: 600px;
+    }
+
+    .about_project__description_page__card:hover {
+        transform: scale(1.05);
+    }
+}

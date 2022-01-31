@@ -1,0 +1,200 @@
+.for_students__content {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+}
+
+.for_students__content__aside {
+    min-height: max-content;
+    width: inherit;
+    border-bottom-style: solid;
+    border-bottom-color: #05434E;
+    border-bottom-width: 2px;
+    background-color: #FAFAFA;
+    position: fixed;
+}
+
+.for_students__content__aside__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.for_students__content__aside__content__block {
+    min-width: 200px;
+    max-width: 200px;
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.for_students__button {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.for_students__content__aside__navigation_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.for_students__content__main {
+    overflow-y: auto;
+    min-height: 800px;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+.for_students__content__main__content {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    height: max-content;
+    position: relative;
+    top: 185px;
+}
+
+.for_students__main__block {
+    min-width: 400px;
+    width: 90%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+}
+
+.content_block , .content_block_bottom , .content_block_top {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description {
+    margin-right: 15px;
+}
+
+.button_to_site {
+    min-width: 90px;
+    max-width: 90px;
+    height: max-content;
+    margin-right: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.date {
+    margin-right: 10px;
+}
+
+.name {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.event_name {
+    font-weight: 600;
+}
+
+@media (min-width: 900px) {
+    .for_students__content {
+        min-height: 500px;
+        flex-direction: row;
+    }
+
+    .for_students__content__aside__content {
+        display: grid;
+        grid-template-columns: 175px;
+        justify-items: left;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        gap: 20px;
+        position: relative;
+        left: 0;
+    }
+
+    .for_students__content__aside__content__block {
+        min-width: 175px;
+        max-width: 175px;
+        height: 90px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+
+    .for_students__content__main {
+        min-height: 500px;
+    }
+
+    .for_students__content__main__content {
+        top: 60px;
+    }
+
+    .for_students__content__aside {
+        min-width: 215px;
+        max-width: 215px;
+        height: 100vh;
+        min-height: 500px;
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+        border-right-style: solid;
+        border-right-color: #05434E;
+        border-right-width: 2px;
+        border-bottom-width: 0;
+    }
+
+    .for_students__button {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+    .for_students__content__aside {
+        min-width: 410px;
+        max-width: 410px;
+    }
+
+    .for_students__content__aside__content {
+        grid-template-columns: 175px 175px;
+        position: relative;
+        left: 0;
+    }
+
+    .for_students__content__aside__content__block {
+        height: 175px;
+        justify-content: center;
+    }
+}

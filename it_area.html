@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT сфера</title>
+    <link rel="stylesheet" href="style_main_navigation.css">
+    <link rel="stylesheet" href="style_all.css">
+    <link rel="stylesheet" href="style_it_area.css">
+    <link rel="shortcut icon" href="./sourse/it_area_round.png">
+</head>
+<body>
+    <header class="header">
+        <div class="main_navigation">
+            <div class="main_navigation__logo_icon">
+                <img src="./sourse/logo.svg" alt="" height="15px">
+            </div>
+            <input type="checkbox" id="main_navigation__checkbox">
+            <nav>
+                <ul>
+                    <li><a href="about_project.html">О проекте</a></li>
+                    <li><a onsubmit="return false" class="selected_menu_item">IT сфера</a></li>
+                    <li><a href="it_direction.html">Направления в IT</a></li>
+                    <li><a href="for_students.html">Студентам</a></li>
+                    <li><a href="gallery.html">Вдохновение</a></li>
+                </ul>
+            </nav>
+            <div class="menu_icon">
+                <label for="main_navigation__checkbox">
+                    <img src="./sourse/menu.png" alt="menu" height="15px" class="main_navigation__menu_icon_element">
+                </label>
+            </div>
+        </div>
+    </header>
+    <div class="it_area__content">
+        <div class="it_area__content__aside">
+            <div class="it_area__content__aside__content" id="scroll">
+                <div class="it_area__content__aside__content__block" id="it_area__book" onclick="fill__books__card()">
+                    Книги
+                </div>
+                <div class="it_area__content__aside__content__block" id="it_area__free_courses" onclick="fill__courses__card()">
+                    Бесплатные курсы
+                </div>
+                <div class="it_area__content__aside__content__block" id="it_area__events" onclick="fill__events__card()">
+                    Мероприятия в IT
+                </div>
+                <div class="it_area__content__aside__content__block" id="it_area__road_map" onclick="fill__road_map__content()">
+                    Road map
+                </div>
+            </div>
+            <div class="it_direction__content__aside__navigation_buttons">
+                <div class="it_direction__left it_direction__button" id="it_direction__left">
+                    <img src="./sourse/left.svg" alt="" width="40px" onclick="previous_card()">
+                </div>
+                <div class="it_direction__right it_direction__button">
+                    <img src="./sourse/right.svg" alt="" width="40px" onclick="next_card()">
+                </div>
+            </div>
+        </div>
+        <div class="it_area__content__main">
+            <div class="stack-cards js-stack-cards it_area__content__main__content">
+
+            </div>
+        </div>
+    </div>
+    <script src="cards_it_area.js"></script>
+</body>
+</html>

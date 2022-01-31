@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Студентам</title>
+    <link rel="stylesheet" href="style_main_navigation.css">
+    <link rel="stylesheet" href="style_all.css">
+    <link rel="stylesheet" href="style_for_students.css">
+    <link rel="shortcut icon" href="./sourse/for_students_round.png">
+</head>
+<body>
+    <a name="top"></a>
+<header class="header">
+    <div class="main_navigation">
+        <div class="main_navigation__logo_icon">
+            <img src="./sourse/logo.svg" alt="" height="15px">
+        </div>
+        <input type="checkbox" id="main_navigation__checkbox">
+        <nav>
+            <ul>
+                <li><a href="about_project.html">О проекте</a></li>
+                <li><a href="it_area.html">IT сфера</a></li>
+                <li><a href="it_direction.html">Направления в IT</a></li>
+                <li><a onsubmit="return false" class="selected_menu_item" >Студентам</a></li>
+                <li><a href="gallery.html">Вдохновение</a></li>
+            </ul>
+        </nav>
+        <div class="menu_icon">
+            <label for="main_navigation__checkbox">
+                <img src="./sourse/menu.png" alt="menu" height="15px" class="main_navigation__menu_icon_element">
+            </label>
+        </div>
+    </div>
+</header>
+    <div class="for_students__content">
+        <div class="for_students__content__aside">
+            <div class="for_students__content__aside__content" id="scroll">
+                    <div class="for_students__content__aside__content__block" id="for_students__university" onclick="fill__university__card()">
+                        Рейтинг университетов
+                    </div>
+                    <div class="for_students__content__aside__content__block" id="for_students__events" onclick="fill__events__card()">
+                        Студенческие мероприятия в IT
+                    </div>
+                    <div class="for_students__content__aside__content__block" id="for_students__internships" onclick="fill__internships__card()">
+                        Стажировки
+                    </div>
+            </div>
+             <div class="for_students__content__aside__navigation_buttons">
+                <div class="for_students__left for_students__button" id="for_students__left">
+                    <img src="./sourse/left.svg" alt="" width="40px" onclick="previous_card()">
+                </div>
+                <div class="for_students__right for_students__button">
+                    <img src="./sourse/right.svg" alt="" width="40px" onclick="next_card()">
+                </div>
+            </div>
+        </div>
+        <div class="for_students__content__main">
+            <div class="stack-cards js-stack-cards for_students__content__main__content">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="cards_for_students.js"></script>
+</html>
